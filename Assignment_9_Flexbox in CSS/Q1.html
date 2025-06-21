@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, p {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        table, ol {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            border: 2px solid #aaa;
+            padding: 5px;
+        }
+        th {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox model vs Grid model</h1>
+    <p>CSS Flexbox and CSS Grid are both layout models in CSS, but they have different purposes and strengths. Here are the main differences between the two:</p>
+    <table>
+        <tr>
+            <th>Flexbox model</th>
+            <th>Grid model</th>
+        </tr>
+        <tr>
+            <td>Flexbox is designed for one-dimensional layouts, either in a row or a column.</td>
+            <td>Grid is a two-dimensional layout system, allowing you to define both rows and columns.</td>
+        </tr>
+        <tr>
+            <td>It is best suited for laying out items in a single direction, either horizontally or vertically.</td>
+            <td>It's suitable for complex layouts where items need to be placed both horizontally and vertically.</td>
+        </tr>
+        <tr>
+            <td>It provides powerful alignment capabilities for items along the main axis and cross axis.</td>
+            <td>Similar to Flexbox, Grid provides alignment properties, but it's more extensive as it operates in two dimensions.</td>
+        </tr>
+        <tr>
+            <td>Flexbox is well-suited for building responsive design components and handling dynamic content.</td>
+            <td>Grid is excellent for building overall page layouts, where you want to divide the page into regions and control the layout of those regions.</td>
+        </tr>
+        <tr>
+            <td>Items can be re-ordered visually without changing their position in the source code using the order property.</td>
+            <td>Grid allows explicit control over the placement of items in the grid cells, offering more precise layout options.</td>
+        </tr>
+    </table>
+    <h1>When to use one over the other:</h1>
+    <ol>
+        <li>Flexbox:
+            <ul>
+                <li>Use Flexbox when dealing with one-dimensional layouts, like navigation bars, lists, or individual components within a larger layout.</li>
+                <li>Ideal for aligning items within a container and distributing space along a single axis.</li>
+            </ul>
+        </li>
+        <li>Grid:
+            <ul>
+                <li>Use Grid for overall page layout or when you need to create a two-dimensional structure with both rows and columns.</li>
+                <li>Suitable for complex layouts where items need to be precisely placed in a grid structure.</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

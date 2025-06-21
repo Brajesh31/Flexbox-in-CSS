@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            width: 1469px;
+            height: 800px;
+            /* border: 1px solid black; */
+            overflow: hidden;
+        }
+        .home {
+            width: 100%;
+            height: 800px;
+            overflow: hidden;
+            overflow-y: hidden;
+            /* margin-left: 5px; */
+            /* border: 1px dashed pink; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .left {
+            width: 40%;
+            margin-right: 50px;
+            margin-top: 50px;
+            position: relative;
+        }
+        .right {
+            width: 60%;
+            height: 800px;
+            overflow: hidden;
+            margin-right: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+            /* border: 1px solid blue; */
+        }
+        img {
+            width: 100%;
+            position: relative;
+            top: 0;
+        }
+        .head {
+            display: flex;
+            margin-left: 65px;
+            /* justify-content: space-evenly; */
+        }
+        .head div:first-child {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .head div:first-child img{
+            width: 100px;
+            height: auto;
+        }
+        .head div:nth-child(2){
+            display: flex;
+            align-items: center;
+            /* margin-right: 25px; */
+        }
+        .head div:nth-child(2) div {
+            display: block;
+        }
+        .head div:nth-child(2) p {
+            margin-left: 12px;
+            font-size: 0.8rem;
+        }
+        input {
+            padding: 6px 10px;
+            margin: 12px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid rgba(170, 170, 170, 0.5);
+            background-color: #fff;
+            
+        }
+        .head div:nth-child(2) div:first-child input {
+            background-color: #FB792B;
+            color: #fff;
+            outline: none;
+            border: none;
+        }
+        .heading {
+            font-family: 'Poppins', sans-serif;
+        }
+        .heading h1 {
+            margin-top: 35px;
+            margin-left: 90px;
+        }
+        .heading p {
+            margin-left: 75px;
+            margin-bottom: 35px;
+        }
+        .heading p span {
+            padding: 15px;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .three-btn {
+            display: flex;
+            margin-left: 80px;
+        }
+        .three-btn input {
+            background-color: #fff;
+            font-weight: 600;
+        }
+        .three-btn input:first-child {
+            background-color: #213d77;
+            color: #fff;
+            border: none;
+        }
+        
+        .box > div {
+            width: 450px;
+            height: 80px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 20px 0;
+            margin-top: 15px;
+            margin-left: 92px;
+        }
+        .box > div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box > div  div p {
+            color: #333;
+            margin-left: 28px;
+            font-size: 0.75rem;
+        }
+        .btn {
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+        .btn input {
+            padding: 20px;
+            width: 450px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            background-color:#01BB0A;
+            color: #fff;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <div class="left">
+                <div class="head">
+                    <div>
+                        <img src="media/IRCTC-logo.png" alt="">
+                        <img src="media/indian-railway-sign-board-500x500.jpg" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Ask Disha</p>
+                            <input type="button" value="Login">
+                        </div>
+                        <div>
+                            <p>Contact Us</p>
+                            <input type="button" value="Register">
+                        </div>
+                        <div>
+                            <p>Alerts</p>
+                            <input type="button" value="Agent Login">
+                        </div>
+                    </div>
+                </div>
+                <div class="heading">
+                    <h1 style="color: #333;">Indian railways</h1>
+                    <p><span style=" color: green;">Safety</span><span style="color: #fb792b">Security</span><span style="color: #213d77">Punctuality</span></p>
+                </div>
+                <div class="three-btn">
+                    <input type="button" value="🎫 BOOK Ticket">
+                    <input type="button" value="✓ PNR Status">
+                    <input type="button" value="📊 Charts / Vacancy">
+                </div>
+                <div class="box">
+                    <div>
+                        <div>
+                            <p>From ▽</p>
+                            <h3>🚆Bangalore</h3>
+                            <p>KSR - Bangalore</p>
+                        </div>
+                        <div style="color: #aaa;">⇄</div>
+                        <div>
+                            <p>To ▽</p>
+                            <h3>🚆Kasaragod</h3>
+                            <p>KSD - Kasaragod</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Date ▽</p>
+                            <h3>📅 01 August 2023</h3>
+                            <p>Tuesday</p>
+                        </div>
+                        <div>
+                            <p>Class ▽</p>
+                            <h3>3️⃣ 3A</h3>
+                            <p>AC 3 Tier</p>
+                        </div>
+                        <div>
+                            <p>Seat Type ▽</p>
+                            <h3>⏱️TATKAL</h3>
+                            <p>Ac 3 Tier</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <input type="button" value="Search Train →">
+                </div>
+            </div>
+            <div class="right">
+                <img src="media/wp12183341-vande-bharat-wallpapers.jpg" alt="">
+                <img src="media/FciFmTIaAAYa0Sj.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

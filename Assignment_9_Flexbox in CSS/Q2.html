@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main  ol{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <h2>Properties of Flex-box layout model</h2>
+    <p>The Flexbox layout model in CSS is designed to provide a more efficient way to design complex layouts in a more predictable and consistent manner. 
+        Here are explanations for the key properties in the Flexbox layout model:</p>
+    <div class="main">
+        <ol>
+            <li>Justify Content:
+                <ul>
+                    <li><b>Definition:</b>This property aligns flex items along the main axis of the flex container.
+                    </li>
+                    <li><b>Values:</b>
+                        <ul>
+                            <li><b>flex-start: </b> Items are packed toward the start of the flex container.</li>
+                            <li><b>flex-end: </b> Items are packed toward the end of the flex container.</li>
+                            <li><b>center:</b>Items are centered along the main axis.</li>
+                            <li><b>space-between:</b> Items are evenly distributed in the container with space between them.</li>
+                            <li><b>space-around:</b> Items are evenly distributed in the container with space around them.</li>
+                            <li><b>space-evenly: </b> Items are evenly distributed in the container with equal space around them.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Align Items:
+                <ul>
+                    <li><b>Definition:</b>This property aligns flex items along the cross axis of the flex container.
+                    </li>
+                    <li><b>Values:</b>
+                        <ul>
+                            <li><b>flex-start: </b>  Items are aligned to the start of the cross axis.</li>
+                            <li><b>flex-end: </b>  Items are aligned to the end of the cross axis.</li>
+                            <li><b>center:</b> Items are centered along the cross axis.</li>
+                            <li><b>baseline</b> Items are aligned to the baseline of the cross axis.</li>
+                            <li><b>stretch: </b> Items are stretched to fill the container along the cross axis.</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Gap:
+                <ul>
+                    <li><b>Definition:</b> This property sets the gap (space) between flex items in a flex container.
+                    </li>
+                    <li><b>Values:</b>
+                        <ul>
+                            <li>A length value (e.g., 10px, 2rem) to specify a fixed gap.</li>
+                            <li>A percentage value (e.g., 5%) to specify a percentage of the container's size.</li>
+                            <li><b>normal:</b> Default value, equivalent to about 1em.</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Flex Direction:
+                <ul>
+                    <li><b>Definition:</b>This property defines the direction in which flex items are placed in the flex container.
+                    </li>
+                    <li><b>Values:</b>
+                        <ul>
+                            <li><b>row:</b> Default value. Items are placed in the same direction as the main axis.</li>
+                            <li><b>row-reverse:</b> Items are placed in the opposite direction as the main axis.</li>
+                            <li><b>column: </b>Items are placed in the same direction as the cross axis.</li>
+                            <li><b>column-reverse:</b> Items are placed in the opposite direction as the cross axis.</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Flex Wrap:
+                <ul>
+                    <li><b>Definition:</b> This property defines whether flex items are forced onto a single line or can be wrapped onto multiple lines.
+                    </li>
+                    <li><b>Values:</b>
+                        <ul>
+                            <li><b>nowrap:</b>Default value. All flex items are on one line.</li>
+                            <li><b>wrap: </b> Flex items are wrapped onto multiple lines if needed.</li>
+                            <li><b>wrap-reverse:</b> Flex items are wrapped onto multiple lines in the reverse order.</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+        </ol>
+    </div>
+</body>
+</html>
